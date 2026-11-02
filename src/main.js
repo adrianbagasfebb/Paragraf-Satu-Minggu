@@ -2,6 +2,9 @@
 import './style.css';
 import { supabase } from './supabase.js';
 import { mountNewsletter } from './newsletter.js';
+import { registerSW } from 'virtual:pwa-register';
+
+registerSW({ immediate: true });
 
 const app = document.querySelector('#app');
 
