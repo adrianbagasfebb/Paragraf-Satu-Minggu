@@ -8,7 +8,7 @@ const app = document.querySelector('#app');
 app.innerHTML = `
   <header class="site-header">
     <a class="brand" href="#">
-      <img src="/public/psm.png" alt="Paragraf Satu Minggu">
+      <img src="/psm.png" alt="Paragraf Satu Minggu">
     </a>
 
     <nav class="main-nav">
@@ -189,7 +189,7 @@ app.innerHTML = `
 
 <footer class="site-footer">
   <a class="brand" href="#">
-    <img src="/public/psm.png" alt="Paragraf Satu Minggu">
+    <img src="/psm.png" alt="Paragraf Satu Minggu">
   </a>
 
   <div class="footer-socials">
