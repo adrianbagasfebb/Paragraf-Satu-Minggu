@@ -191,7 +191,7 @@ app.innerHTML = `
   </main>
 
 <footer class="site-footer">
-  <a class="brand" href="#">
+  <a class="brand" href="/">
     <img src="/psm.png" alt="Paragraf Satu Minggu">
   </a>
 
