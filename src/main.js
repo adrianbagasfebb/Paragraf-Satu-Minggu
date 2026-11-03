@@ -20,7 +20,7 @@ app.innerHTML = `
       <a href="#catatan">Ruang Catatan</a>
     </nav>
 
-    <a class="header-link" href="#artikel">Jelajahi tulisan ↗</a>
+    <a class="header-link" href="/#artikel">Jelajahi tulisan ↗</a>
   </header>
 
   <main>
