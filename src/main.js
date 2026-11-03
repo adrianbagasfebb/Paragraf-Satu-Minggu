@@ -356,7 +356,7 @@ function formatArticleContent(content = '') {
 }
 
 function articleHref(slug) {
-  return `#baca/${encodeURIComponent(slug)}`;
+  return `/artikel/${encodeURIComponent(slug)}`;
 }
 
 function imageMarkup(article, className = 'article-image') {
