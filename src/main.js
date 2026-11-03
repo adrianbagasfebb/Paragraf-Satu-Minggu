@@ -10,14 +10,14 @@ const app = document.querySelector('#app');
 
 app.innerHTML = `
   <header class="site-header">
-    <a class="brand" href="#">
+    <a class="brand" href="/">
       <img src="/psm.png" alt="Paragraf Satu Minggu">
     </a>
 
     <nav class="main-nav">
-      <a href="#artikel">Tulisan</a>
-      <a href="#tentang">Mengenal</a>
-      <a href="#catatan">Ruang Catatan</a>
+      <a href="/#artikel">Tulisan</a>
+      <a href="/#tentang">Mengenal</a>
+      <a href="/#catatan">Ruang Catatan</a>
     </nav>
 
     <a class="header-link" href="/#artikel">Jelajahi tulisan ↗</a>
