@@ -642,6 +642,16 @@ async function loadArticles() {
 ) {
   handleRoute();
   }
+} else if (location.hash) {
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const target = document.querySelector(location.hash);
+
+      if (target) {
+        target.scrollIntoView({ behavior: 'auto' });
+      }
+    });
+  });
 }
 
 searchInput.addEventListener('input', () => {
