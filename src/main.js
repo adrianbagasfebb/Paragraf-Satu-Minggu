@@ -525,7 +525,7 @@ function renderReadingPage(article) {
       <div class="reading-end">
         <span>—</span>
         <p>Terima kasih sudah meluangkan waktu untuk membaca.</p>
-        <a class="button button-dark" href="#artikel">Temukan tulisan lain ↗</a>
+        <a class="button button-dark" href="/#artikel">Temukan tulisan lain ↗</a>
       </div>
     </article>
   `;
