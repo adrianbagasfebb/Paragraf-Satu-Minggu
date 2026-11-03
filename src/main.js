@@ -654,6 +654,7 @@ if (
     });
   });
 }
+};
 
 searchInput.addEventListener('input', () => {
   searchTerm = searchInput.value.trim();
