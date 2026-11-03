@@ -499,7 +499,7 @@ function renderReadingPage(article) {
 
   readingPage.innerHTML = `
     <div class="reading-toolbar">
-      <a class="text-link" href="#artikel">← Kembali ke tulisan</a>
+      <a class="text-link" href="/#artikel">← Kembali ke tulisan</a>
       <span class="reading-progress-label">MEMBACA</span>
     </div>
 
@@ -597,7 +597,7 @@ async function handleRoute() {
       readingPage.innerHTML = `
         <div class="empty-state">
           <h3>Tulisan tidak ditemukan.</h3>
-          <a class="text-link" href="#artikel">Kembali ke daftar tulisan</a>
+          <a class="text-link" href="/#artikel">Kembali ke daftar tulisan</a>
         </div>
       `;
       return;
