@@ -636,16 +636,17 @@ async function loadArticles() {
   renderCategories();
   renderArticles();
 
-  if (
+if (
   location.pathname.startsWith('/artikel/') ||
   location.hash.startsWith('#baca/')
 ) {
   handleRoute();
-  }
 } else if (location.hash) {
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
-      const target = document.querySelector(location.hash);
+      const target = document.querySelector(
+        decodeURIComponent(location.hash)
+      );
 
       if (target) {
         target.scrollIntoView({ behavior: 'auto' });
