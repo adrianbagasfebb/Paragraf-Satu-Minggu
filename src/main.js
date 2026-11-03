@@ -633,8 +633,11 @@ async function loadArticles() {
   renderCategories();
   renderArticles();
 
-  if (location.hash.startsWith('#baca/')) {
-    handleRoute();
+  if (
+  location.pathname.startsWith('/artikel/') ||
+  location.hash.startsWith('#baca/')
+) {
+  handleRoute();
   }
 }
 
