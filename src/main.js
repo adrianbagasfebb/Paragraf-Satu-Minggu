@@ -558,7 +558,10 @@ function setupReadingProgress() {
 async function handleRoute() {
   const publicPage = document.querySelector('#public-page');
   const readingPage = document.querySelector('#reading-page');
-  const match = location.hash.match(/^#baca\/(.+)$/);
+
+  const pathMatch = location.pathname.match(/^\/artikel\/([^/]+)\/?$/);
+  const hashMatch = location.hash.match(/^#baca\/(.+)$/);
+  const match = pathMatch || hashMatch;
 
   if (!match) {
     readingPage.hidden = true;
@@ -572,7 +575,7 @@ async function handleRoute() {
   try {
     slug = decodeURIComponent(match[1]);
   } catch {
-    location.hash = '#artikel';
+    history.replaceState(null, '', '/#artikel');
     return;
   }
 
